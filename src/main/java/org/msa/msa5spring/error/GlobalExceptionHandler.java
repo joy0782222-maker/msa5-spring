@@ -17,9 +17,9 @@ public class GlobalExceptionHandler {
             .status(500)
             .body(
                 new GlobalResponseDTO<>(
-                        "E99",
-                        "시스템 에러",
-                        null
+                    "E99",
+                    "시스템 에러",
+                    null
                 )
             );
 

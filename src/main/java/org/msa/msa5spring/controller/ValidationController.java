@@ -15,7 +15,7 @@ public class ValidationController {
 
     @GetMapping("/validation/{id}")
     public String validationSegment(
-            @Min(value = 1, message = "1<=")
-            @PathVariable Long id
+        @Min(value = 1, message = "1<=")
+        @PathVariable Long id
     ) {return id.toString();}
 }
