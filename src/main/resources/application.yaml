@@ -6,7 +6,10 @@ spring:
       include-stacktrace: never
       include-message: never
 logging:
+  file:
+    name: logs/error.log
   level:
-    root: info
+    # error > warn > info > debug > trace
+    root: warn
     org.msa.msa5spring: debug
-debug: true
+debug: false
