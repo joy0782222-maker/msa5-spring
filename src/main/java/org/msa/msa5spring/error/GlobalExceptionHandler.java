@@ -42,6 +42,7 @@ public class GlobalExceptionHandler {
                     (existing, replacement) -> existing // key가 중복됐을때 처리
             )
         );
+        log.debug("{}\n{}", "유효성 체크에로", errors);
         return ResponseEntity
             .status(HttpStatus.BAD_REQUEST)
             .body(
