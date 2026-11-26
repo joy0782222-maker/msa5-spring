@@ -61,7 +61,7 @@ public class GlobalExceptionHandler {
         log.debug("디버그 로깅");
         log.info("인포 로깅");
         log.warn("워닝 로깅");
-        log.error("에러 로깅");
+        log.error("에러 로깅", e);
 
         return ResponseEntity
             .status(500)
